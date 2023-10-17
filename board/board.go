@@ -13,11 +13,7 @@ func MakeBoard(width, height int, fill string) Board {
 	   Verwenden Sie eine for-Schleife, um die Slice mit den gewünschten Zeilen zu füllen.
 	   Erzeugen Sie für jede Zeile eine neue Slice mit der Funktion MakeBoardRow.
 	*/
-	// tag::solution[]
-	for i := range board {
-		board[i] = MakeBoardRow(width, fill)
-	}
-	// end::solution[]
+	// TODO
 	return board
 }
 
@@ -28,10 +24,8 @@ func MakeEmptyBoard(width, height int) Board {
 	/* Hinweis:
 	   Verwenden Sie die Funktion MakeBoard.
 	*/
-	// tag::solution[]
-	return MakeBoard(width, height, " ")
-	// end::solution[]
-	// iftask: return Board{}
+	// TODO
+	return Board{}
 }
 
 // GetRow gibt die Zeile an der übergebenen Position zurück.
@@ -39,10 +33,8 @@ func GetRow(b Board, y int) BoardRow {
 	/* Hinweis:
 	   Verwenden Sie die Index-Notation, um die Zeile zu erhalten.
 	*/
-	// tag::solution[]
-	return b[y]
-	// end::solution[]
-	// iftask: return board[0]
+	// TODO
+	return b[0]
 }
 
 // GetColumn gibt die Spalte an der übergebenen Position zurück.
@@ -52,11 +44,7 @@ func GetColumn(b Board, x int) BoardRow {
 	   Verwenden Sie eine for-Schleife, um die Zeilen zu durchlaufen.
 	   Verwenden Sie die Index-Notation, um jeweils das x-te Element der Zeile zu erhalten.
 	*/
-	// tag::solution[]
-	for i, row := range b {
-		column[i] = row[x]
-	}
-	// end::solution[]
+	// TODO
 	return column
 }
 
@@ -66,10 +54,8 @@ func BoardRowContainsOnly(b Board, row int, s string) bool {
 	   Verwenden Sie die Funktion GetRow.
 	   Verwenden Sie die Funktion RowContainsOnly.
 	*/
-	// tag::solution[]
-	return RowContainsOnly(GetRow(b, row), s)
-	// end::solution[]
-	// iftask: return false
+	// TODO
+	return false
 }
 
 // BoardColumnContainsOnly prüft, ob die angegebene Spalte nur aus dem übergebenen String besteht.
@@ -78,10 +64,8 @@ func BoardColumnContainsOnly(b Board, column int, s string) bool {
 	   Verwenden Sie die Funktion GetColumn.
 	   Verwenden Sie die Funktion RowContainsOnly.
 	*/
-	// tag::solution[]
-	return RowContainsOnly(GetColumn(b, column), s)
-	// end::solution[]
-	// iftask: return false
+	// TODO
+	return false
 }
 
 // BoardContainsOnly prüft, ob das Spielbrett nur aus dem übergebenen String besteht.
@@ -90,13 +74,6 @@ func BoardContainsOnly(b Board, s string) bool {
 	   Verwenden Sie eine for-Schleife, um die Zeilen zu durchlaufen.
 	   Verwenden Sie die Funktion RowContainsOnly.
 	*/
-	// tag::solution[]
-	for row := range b {
-		if !BoardRowContainsOnly(b, row, s) {
-			return false
-		}
-	}
-	return true
-	// end::solution[]
-	// iftask: return false
+	// TODO
+	return false
 }

@@ -11,12 +11,7 @@ func PrintBoardRow(row BoardRow) {
 	   Hängen Sie an die Variable output jeweils das Element der Slice
 	   und den String "|" an.
 	*/
-	// tag::solution[]
-	for _, v := range row {
-		output += v + " | "
-	}
-	output = output[:len(output)-1]
-	// end::solution[]
+	// TODO
 	fmt.Println(output)
 }
 
@@ -29,11 +24,7 @@ func RowDivider(length int) string {
 	   Verwenden Sie eine for-Schleife, um den Trenn-String zu erzeugen.
 	   Hängen Sie in jedem Schleifendurchlauf den String "---+" an.
 	*/
-	// tag::solution[]
-	for i := 0; i < length; i++ {
-		result += "---+"
-	}
-	// end::solution[]
+	// TODO
 	return result
 }
 
@@ -46,11 +37,6 @@ func PrintBoard(b Board) {
 	   Verwenden Sie die Funktion PrintBoardRow, um die Zeile auszugeben.
 	   Geben Sie nach jeder Zeile den Trenn-String aus.
 	*/
-	// tag::solution[]
 	fmt.Println(divider)
-	for _, row := range b {
-		PrintBoardRow(row)
-		fmt.Println(divider)
-	}
-	// end::solution[]
+	// TODO
 }
