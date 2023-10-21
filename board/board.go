@@ -69,7 +69,7 @@ func GetDiagRight(b Board) BoardRow {
 func GetDiagLeft(b Board) BoardRow {
 	diag := make(BoardRow, len(b))
 	/* Hinweis:
-	   Gehen Sie analog zu GetDiagDown vor.
+	   Gehen Sie analog zu GetDiagRight vor.
 	   Überlegen Sie sich, welches Element Sie dieses Mal aus jeder Zeile benötigen.
 	*/
 	for i, row := range b {
