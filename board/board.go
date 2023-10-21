@@ -122,3 +122,14 @@ func BoardContainsOnly(b Board, s string) bool {
 	// TODO
 	return false
 }
+
+// BoardDoesNotContain prüft, ob das Spielbrett den übergebenen String nicht enthält.
+// D.h. es darf kein Feld auf dem Spielbrett den übergebenen String enthalten.
+func BoardDoesNotContain(b Board, s string) bool {
+	/* Hinweis:
+	   Verwenden Sie eine for-Schleife, um die Zeilen zu durchlaufen.
+	   Verwenden Sie eine innere for-Schleife, um die Spalten zu durchlaufen.
+	*/
+	// TODO
+	return true
+}
