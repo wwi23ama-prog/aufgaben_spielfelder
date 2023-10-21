@@ -27,6 +27,20 @@ func GetRow(b Board, y int) BoardRow {
 	return b[0]
 }
 
+// GetDiagRight gibt die Diagonale von links oben nach rechts unten zurück.
+func GetDiagRight(b Board) BoardRow {
+	diag := make(BoardRow, len(b))
+	// TODO
+	return diag
+}
+
+// GetDiagLeft gibt die Diagonale von rechts oben nach links unten zurück.
+func GetDiagLeft(b Board) BoardRow {
+	diag := make(BoardRow, len(b))
+	// TODO
+	return diag
+}
+
 // GetColumn gibt die Spalte an der übergebenen Position zurück.
 func GetColumn(b Board, x int) BoardRow {
 	column := make(BoardRow, len(b))
