@@ -79,3 +79,10 @@ func BoardContainsOnly(b Board, s string) bool {
 	// TODO
 	return false
 }
+
+// BoardDoesNotContain prüft, ob das Spielbrett den übergebenen String nicht enthält.
+// D.h. es darf kein Feld auf dem Spielbrett den übergebenen String enthalten.
+func BoardDoesNotContain(b Board, s string) bool {
+	// TODO
+	return true
+}
