@@ -48,6 +48,29 @@ func GetColumn(b Board, x int) BoardRow {
 	return column
 }
 
+// GetDiagRight gibt die Diagonale von links oben nach rechts unten zurück.
+func GetDiagRight(b Board) BoardRow {
+	diag := make(BoardRow, len(b))
+	/* Hinweis:
+	   Verwenden Sie eine for-Schleife, um die Zeilen zu durchlaufen.
+	   Da Zeile 0 oben und Spalte 0 links ist, brauchen Sie die Elemente (i,i),
+	   also aus jeder Zeile das i-te Element.
+	*/
+	// TODO
+	return diag
+}
+
+// GetDiagLeft gibt die Diagonale von rechts oben nach links unten zurück.
+func GetDiagLeft(b Board) BoardRow {
+	diag := make(BoardRow, len(b))
+	/* Hinweis:
+	Gehen Sie analog zu GetDiagRight vor.
+	Überlegen Sie sich, welches Element Sie dieses Mal aus jeder Zeile benötigen.
+	*/
+	// TODO
+	return diag
+}
+
 // BoardRowContainsOnly prüft, ob die angegebene Zeile nur aus dem übergebenen String besteht.
 func BoardRowContainsOnly(b Board, row int, s string) bool {
 	/* Hinweis:
