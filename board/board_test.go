@@ -202,5 +202,32 @@ func ExampleBoardContainsOnly() {
 	// true
 	// false
 	// false
+}
 
+func ExampleBoardDoesNotContain() {
+	board1 := MakeEmptyBoard(3, 2)
+	fmt.Println(BoardDoesNotContain(board1, " "))
+	fmt.Println(BoardDoesNotContain(board1, "A"))
+	board1[0][0] = "A"
+	fmt.Println(BoardDoesNotContain(board1, " "))
+	fmt.Println(BoardDoesNotContain(board1, "A"))
+	board1[0][1] = "B"
+	board1[0][2] = "C"
+	board1[1][0] = "D"
+	board1[1][1] = "E"
+	board1[1][2] = "F"
+	fmt.Println(BoardDoesNotContain(board1, " "))
+	fmt.Println(BoardDoesNotContain(board1, "A"))
+	fmt.Println(BoardDoesNotContain(board1, "B"))
+	fmt.Println(BoardDoesNotContain(board1, "K"))
+
+	// Output:
+	// false
+	// true
+	// false
+	// false
+	// true
+	// false
+	// false
+	// true
 }
