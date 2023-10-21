@@ -60,6 +60,20 @@ func BoardColumnContainsOnly(b Board, column int, s string) bool {
 	return false
 }
 
+// BoardDiagRightContainsOnly prüft, ob die Diagonale von links
+// oben nach rechts unten nur aus dem übergebenen String besteht.
+func BoardDiagRightContainsOnly(b Board, s string) bool {
+	// TODO
+	return false
+}
+
+// BoardDiagLeftContainsOnly prüft, ob die Diagonale von rechts
+// oben nach links unten nur aus dem übergebenen String besteht.
+func BoardDiagLeftContainsOnly(b Board, s string) bool {
+	// TODO
+	return false
+}
+
 // BoardContainsOnly prüft, ob das Spielbrett nur aus dem übergebenen String besteht.
 func BoardContainsOnly(b Board, s string) bool {
 	// TODO

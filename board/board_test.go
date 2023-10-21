@@ -142,6 +142,46 @@ func ExampleBoardColumnContainsOnly() {
 	// false
 }
 
+func ExampleBoardDiagRightContainsOnly() {
+	board := MakeEmptyBoard(3, 3)
+	board[0][0] = "A"
+	board[0][1] = "B"
+	board[0][2] = "C"
+	board[1][0] = "D"
+	board[1][1] = "A"
+	board[1][2] = "F"
+	board[2][0] = "G"
+	board[2][1] = "H"
+	board[2][2] = "A"
+
+	fmt.Println(BoardDiagRightContainsOnly(board, "A"))
+	fmt.Println(BoardDiagRightContainsOnly(board, "B"))
+
+	// Output:
+	// true
+	// false
+}
+
+func ExampleBoardDiagLeftContainsOnly() {
+	board := MakeEmptyBoard(3, 3)
+	board[0][0] = "A"
+	board[0][1] = "B"
+	board[0][2] = "C"
+	board[1][0] = "D"
+	board[1][1] = "C"
+	board[1][2] = "F"
+	board[2][0] = "C"
+	board[2][1] = "H"
+	board[2][2] = "I"
+
+	fmt.Println(BoardDiagLeftContainsOnly(board, "C"))
+	fmt.Println(BoardDiagLeftContainsOnly(board, "B"))
+
+	// Output:
+	// true
+	// false
+}
+
 func ExampleBoardContainsOnly() {
 	board1 := MakeEmptyBoard(3, 2)
 	fmt.Println(BoardContainsOnly(board1, " "))
